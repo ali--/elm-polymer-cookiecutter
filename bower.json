@@ -1,0 +1,34 @@
+{
+  "name": "ElmPolymerCookieCutter",
+  "version": "1.1.0",
+  "authors": [
+    "Authors"
+  ],  
+  "description": "Integrating Elm and Polymer",
+  "main": "index.html",
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "private": true,
+  "dependencies": {
+    "google-map": "GoogleWebComponents/google-map#^1.1.13",
+    "app-layout": "^0.10.6",
+    "paper-icon-button": "^1.1.4",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.0",
+    "iron-icons": "PolymerElements/iron-icons#^1.0.0",
+    "paper-card": "PolymerElements/paper-card#^1.1.4",
+    "paper-input": "^1.1.22",
+    "paper-button": "^1.0.14",
+    "paper-slider": "PolymerElements/paper-slider#^1.0.12",
+    "paper-spinner": "PolymerElements/paper-spinner#^1.2.1",
+    "paper-date-picker-item": "https://github.com/Collaborne/paper-date-picker-item.git#^1.2.1"
+  
+  },
+  "devDependencies": {
+    "web-component-tester": "^4.0.0"
+  }
+}
