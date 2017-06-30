@@ -21,25 +21,6 @@ import Json.Decode exposing (field)
 import Set exposing (Set)
 import Maybe
 
-import Polymer.Paper as Paper
-import Polymer.Attributes
-    exposing
-        ( icon
-        , label
-        , path
-        , selected
-        , stringProperty
-        )
-import Polymer.Events
-    exposing
-        ( onIronSelect
-        , onSelectedChanged
-        , onTap
-        , onValueChanged
-        )
-
-
-
 -- MODEL
 type alias SparkURL = String
 type alias FactTable = Maybe TableName
@@ -296,7 +277,7 @@ main =
 -- HTTP
 
 apiURL = 
-    "http://0.0.0.0:8889"
+    "http://0.0.0.0:8888"
 
 type alias ColumnName = String
 type alias TableName = String
@@ -398,7 +379,7 @@ tablesView model =
   else Html.text "Connect to Spark to choose a Fact Table"
 
 chooseFactButton model factTableName = div [] [
- {- Button.render Mdl 
+ Button.render Mdl 
             [2] 
             model.mdl
             [ Button.raised
@@ -407,8 +388,6 @@ chooseFactButton model factTableName = div [] [
             , Options.onClick ( ChooseFactTable factTableName )
             ]
             [ text "Choose as Fact Table"]
- ,-}
-    Paper.button [ icon "stars", attribute "raised" "", attribute "class" "green"  ] [ text "HERER" ]
  ]
 
 
